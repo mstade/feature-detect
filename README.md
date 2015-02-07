@@ -1,10 +1,7 @@
 Feature detection
 =================
 
-This library is meant to provide feature detection support for Node.js or
-Io.js compatible environments. It is not intended to provide feature
-detection support in browser environments, for which there already are
-numerous alternatives.
+This library is meant to provide feature detection support for Node.js or Io.js compatible environments. It is not intended to provide feature detection support in browser environments, for which there already are numerous alternatives.
 
 Usage
 -----
@@ -15,17 +12,15 @@ npm install --save feature-detect
 
 ### Install time detection (recommended)
 
-To detect features at install time, put a `preinstall` script similar to
-the following in `package.json`:
+To detect features at install time, put an `install` script similar to the following in `package.json`:
 
 ```javascript
 { scripts:
-  { "preinstall": "feature-detect generators" }
+  { "install": "feature-detect generators" }
 }
 ```
 
-In the example above, the `feature-detect` executable will load the module
-`generators`. The module is expected to export a list of tests, like so:
+In the example above, the `feature-detect` executable will load the module `generators`. The module is expected to export a list of tests, like so:
 
 ```javascript
 exports.feature = 'Generators'
@@ -39,9 +34,7 @@ exports.tests =
 ]
 ```
 
-When running `npm install` in an environment that supports generators,
-nothing will happen, but if generators aren't supported, the installation
-will fail and you should see output like the following:
+When running `npm install` in an environment that supports generators, nothing will happen, but if generators aren't supported, the installation will fail and you should see output like the following:
 
 ```bash
 WeakMap is not supported in this environment
