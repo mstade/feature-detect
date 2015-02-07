@@ -1,0 +1,24 @@
+{
+  "name": "feature-detect",
+  "version": "0.0.1",
+  "description": "Feature detection library for node environments.",
+  "bin": {
+    "feature-detect": "bin/feature-detect.js"
+  },
+  "main": "lib/execute.js",
+  "keywords": [
+    "feature-detect"
+  ],
+  "author": "Marcus Stade",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "must": "^0.12.0",
+    "nodemon": "^1.3.6"
+  },
+  "scripts": {
+    "test": "istanbul test _mocha --report html -- -R spec",
+    "test-dev": "nodemon -x \"_mocha -R min\""
+  }
+}
