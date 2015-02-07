@@ -1,6 +1,6 @@
 {
   "name": "feature-detect",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Feature detection library for node environments.",
   "bin": {
     "feature-detect": "bin/feature-detect.js"
