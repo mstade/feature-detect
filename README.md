@@ -65,7 +65,7 @@ var result = detect(
   }
 )
 
-result.success? console.log('WeakMap supported!) : console.error('No WeakMap!')
+result.success? console.log('WeakMap supported!') : console.error('No WeakMap!')
 ```
 
 ---
